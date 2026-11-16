@@ -1,116 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Discover useful AI tools, technology tips, smartphone tricks and helpful online resources.">
-<title>Discover Smart World | AI & Technology</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
-header{background:#102b50;color:white;padding:20px;text-align:center}
-header h1{margin:0;font-size:27px}
-nav{background:#183d68;padding:13px;text-align:center}
-nav a{color:white;text-decoration:none;margin:0 12px;font-size:14px}
-.hero{padding:55px 20px;text-align:center;background:linear-gradient(135deg,#102b50,#1769aa);color:white}
-.hero h2{font-size:32px;margin:0 0 15px}
-.hero p{line-height:1.7;max-width:600px;margin:auto}
-.container{max-width:950px;margin:25px auto;padding:15px}
-.section-title{text-align:center;margin:30px 0}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:white;padding:23px;border-radius:13px;box-shadow:0 3px 14px #0000000d}
-.card .emoji{font-size:35px}
-.card h3{color:#174b7e}
-.card p{line-height:1.6;color:#526174}
-.btn{display:inline-block;background:#0878d1;color:white;padding:12px 20px;border-radius:7px;text-decoration:none;margin-top:10px}
-.info{background:white;padding:25px;border-radius:12px;margin-top:25px;line-height:1.8}
-footer{background:#102b50;color:white;text-align:center;padding:25px;margin-top:35px}
-footer a{color:white;margin:8px}
-@media (max-width: 600px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h2 {
-    font-size: 26px;
-  }
-
-  nav a {
-    margin: 0 6px;
-    font-size: 12px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>Discover More</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: #050505;
+      display: flex; justify-content: center; align-items: flex-start;
+      padding: 0 12px 32px; font-family: Arial, sans-serif;
+    }
+    .page {
+      width: 100%; max-width: 430px; min-height: 100vh;
+      background: #fff; color: #222; padding: 18px 22px 45px;
+      text-align: center;
+    }
+    .date { text-align: left; color: #888; font-size: 13px; margin-bottom: 38px; }
+    .photo {
+      display: block; width: 100%; max-width: 330px; height: auto;
+      aspect-ratio: 1 / 1; object-fit: cover; margin: 0 auto;
+    }
+    .cta-wrap { margin: 54px auto 0; }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center; gap: 13px;
+      min-width: 255px; padding: 17px 27px; border-radius: 999px;
+      color: white; text-decoration: none; font-size: 27px; font-weight: 700;
+      background: linear-gradient(180deg, #3985f4 0%, #0750c9 55%, #002b8e 100%);
+      border: 3px solid #1745a5;
+      box-shadow: inset 0 2px 3px rgba(255,255,255,.65), 0 4px 7px rgba(0,0,0,.25);
+    }
+    .phone {
+      width: 42px; height: 42px; border-radius: 50%; display: grid;
+      place-items: center; background: #0750bd; border: 2px solid rgba(255,255,255,.6);
+      font-size: 24px;
+    }
+    .small-link { display: inline-block; margin-top: 52px; color: #3979bd; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .disclosure { margin: 13px auto 0; max-width: 280px; color: #777; font-size: 11px; line-height: 1.5; }
+    @media (max-width: 360px) {
+      .page { padding-left: 16px; padding-right: 16px; }
+      .cta { min-width: 225px; font-size: 24px; }
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>Discover Smart World</h1>
-<p>Explore Technology. Discover Possibilities.</p>
-</header>
-<nav>
-<a href="#home">Home</a>
-<a href="#discover">Discover</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-<section class="hero" id="home">
-<h2>Welcome to Smart World</h2>
-<p>Discover useful AI tools, smart technology tips, mobile tricks and online resources to make your digital life easier.</p>
-</section>
-<main class="container">
-<h2 class="section-title" id="discover">Explore Our Topics</h2>
-<div class="cards">
-<div class="card">
-<div class="emoji">🤖</div>
-<h3>AI Tools</h3>
-<p>Discover useful artificial intelligence tools and learn how they can help you.</p>
-<a class="btn" href="ai-tools.html">Read More</a>
-</div>
-<div class="card">
-<div class="emoji">📱</div>
-<h3>Mobile Tips</h3>
-<p>Explore smartphone features, useful applications and practical tips.</p>
-<a class="btn" href="android-apps.html">Read More</a>
-</div>
-<div class="card">
-<div class="emoji">💻</div>
-<h3>Online Tools</h3>
-<p>Find helpful online resources for everyday digital tasks.</p>
-<a class="btn" href="online-tools.html">Read More</a>
-</div>
-<div class="card">
-<div class="emoji">🌐</div>
-<h3>Tech Facts</h3>
-<p>Learn interesting facts and discover new technology trends.</p>
-<a class="btn" href="technology-tips.html">Read More</a>
-</div>
-</div>
-<section class="info" id="about">
-<h2>About Discover Smart World</h2>
-<p>Our goal is to share helpful information about AI, technology, mobile applications and online resources with readers around the world.</p>
-</section>
-<section class="info" id="contact">
-<h2>Contact Us</h2>
-<p>Have a question or suggestion? Contact us by email.</p>
-<p>Email: mdbipulsarka543@gmail.com</p>
-</section>
-</main>
-<footer>
-<p>© 2026 Discover Smart World</p>
-<p>
-<a href="index.html">Home</a> |
-<a href="ai-tools.html">AI Tools</a> |
-<a href="online-tools.html">Online Tools</a>
-</p>
-<p>
-<a href="android-apps.html">Android Apps</a> |
-<a href="technology-tips.html">Technology Tips</a>
-</p>
-<p>
-<a href="privacy.html">Privacy Policy</a> |
-<a href="contact.html">Contact Us</a>
-</p>
-</footer>
+  <main class="page">
+    <div class="date" id="today"></div>
+    <img class="photo" src="photo.jpg" alt="Featured photo">
+    <div class="cta-wrap">
+      <a class="cta" href="https://asiafilm.org/4/858a13951f405faf3e00529d1e550bd2"
+         target="_blank" rel="nofollow sponsored noopener">
+        <span class="phone" aria-hidden="true">☎</span>
+        <span>Call Now</span>
+      </a>
+    </div>
+    <a class="small-link" href="https://asiafilm.org/4/858a13951f405faf3e00529d1e550bd2"
+       target="_blank" rel="nofollow sponsored noopener">☎ &nbsp; CALL NOW &nbsp; ☎</a>
+    <p class="disclosure">এই বাটনে ক্লিক করলে একটি বাইরের ওয়েবসাইট খুলবে; এটি ফোন কল নয়।</p>
+  </main>
+  <script>
+    document.getElementById("today").textContent =
+      new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  </script>
 </body>
 </html>
