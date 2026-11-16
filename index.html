@@ -10,34 +10,32 @@
     body {
       margin: 0; min-height: 100vh; background: #050505;
       display: flex; justify-content: center; align-items: flex-start;
-      padding: 0 12px 32px; font-family: Arial, sans-serif;
+      padding: 0 12px;
+      font-family: Arial, sans-serif;
     }
     .page {
       width: 100%; max-width: 430px; min-height: 100vh;
-      background: #fff; color: #222; padding: 18px 22px 45px;
-      text-align: center;
+      background: #fff; padding: 34px 22px 50px;
+      display: flex; flex-direction: column; align-items: center;
     }
-    .date { text-align: left; color: #888; font-size: 13px; margin-bottom: 38px; }
     .photo {
-      display: block; width: 100%; max-width: 330px; height: auto;
-      aspect-ratio: 1 / 1; object-fit: cover; margin: 0 auto;
+      display: block; width: 100%; max-width: 340px;
+      aspect-ratio: 1 / 1; object-fit: cover;
     }
-    .cta-wrap { margin: 54px auto 0; }
+    .cta-wrap { margin: 58px auto 0; }
     .cta {
       display: inline-flex; align-items: center; justify-content: center; gap: 13px;
       min-width: 255px; padding: 17px 27px; border-radius: 999px;
-      color: white; text-decoration: none; font-size: 27px; font-weight: 700;
+      color: #fff; text-decoration: none; font-size: 27px; font-weight: 700;
       background: linear-gradient(180deg, #3985f4 0%, #0750c9 55%, #002b8e 100%);
       border: 3px solid #1745a5;
       box-shadow: inset 0 2px 3px rgba(255,255,255,.65), 0 4px 7px rgba(0,0,0,.25);
     }
     .phone {
       width: 42px; height: 42px; border-radius: 50%; display: grid;
-      place-items: center; background: #0750bd; border: 2px solid rgba(255,255,255,.6);
-      font-size: 24px;
+      place-items: center; background: #0750bd;
+      border: 2px solid rgba(255,255,255,.6); font-size: 24px;
     }
-    .small-link { display: inline-block; margin-top: 52px; color: #3979bd; font-size: 13px; font-weight: 700; text-decoration: none; }
-    .disclosure { margin: 13px auto 0; max-width: 280px; color: #777; font-size: 11px; line-height: 1.5; }
     @media (max-width: 360px) {
       .page { padding-left: 16px; padding-right: 16px; }
       .cta { min-width: 225px; font-size: 24px; }
@@ -46,8 +44,7 @@
 </head>
 <body>
   <main class="page">
-    <div class="date" id="today"></div>
-    <img class="photo" src="photo.jpg" alt="Featured photo">
+    <img class="photo" src="photo.jpg" alt="Photo">
     <div class="cta-wrap">
       <a class="cta" href="https://asiafilm.org/4/858a13951f405faf3e00529d1e550bd2"
          target="_blank" rel="nofollow sponsored noopener">
@@ -55,13 +52,6 @@
         <span>Call Now</span>
       </a>
     </div>
-    <a class="small-link" href="https://asiafilm.org/4/858a13951f405faf3e00529d1e550bd2"
-       target="_blank" rel="nofollow sponsored noopener">☎ &nbsp; CALL NOW &nbsp; ☎</a>
-    <p class="disclosure">এই বাটনে ক্লিক করলে একটি বাইরের ওয়েবসাইট খুলবে; এটি ফোন কল নয়।</p>
   </main>
-  <script>
-    document.getElementById("today").textContent =
-      new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
-  </script>
 </body>
 </html>
